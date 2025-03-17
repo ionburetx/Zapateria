@@ -1,0 +1,55 @@
+.menu {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #333;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background: #c72929;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    position: relative;
+    left: 0px;
+    top: 100%;
+    width: 200px;
+    background: #0ec23b;
+    overflow: visible;
+}
+
+.menu li:hover .submenu {
+    display: block; /* Muestra las subcategorías al pasar el mouse por encima */
+    max-height: 250px;
+}
+
+.submenu li a {
+    padding: 10px;
+}
+
