@@ -1,27 +1,58 @@
+:root {
+    --color-primario: #f00;
+    --color-primario-hover: #c00;
+    --color-btn-secundario-hover: rgb(255, 193, 193);
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.body-general {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 16px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 32px 0;
+    gap: 16px;
+}
+
 .card-producto {
     width: 300px;
     max-width: 100%;
     margin: 0 auto;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 24px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-producto:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    border: 3px solid var(--color-btn-secundario-hover);
+    .main-producto > h3 {
+        text-decoration: underline;
+    }
 }
 
 .img-producto {
     width: 100%;
-    height: auto;
+    height: 150px;
     object-fit: cover;
+    object-position: center;
 }
 
-h3 {
+.main-producto > h3 {
     font-size: 24px;
     margin: 16px 0;
+    padding-top: 32px;
 }
 
 p {
@@ -29,10 +60,17 @@ p {
     margin: 8px 0;
 }
 
+.precio-producto-unidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
 .producto-precio {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     margin: 16px 0;
+    text-align: right;
 }
 
 .producto-precio-tachado {
@@ -42,8 +80,67 @@ p {
     padding-right: 24px;
 }
 
-.producto-unidades {
-    font-size: 16px;
-    margin: 16px 0;
-    color: #999;
+.tallas-unidades {
+    float: right;
+    margin-top: 16px;
 }
+
+.producto-tallas {
+    width: auto;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--color-primario); 
+    font-size: 16px;   
+}
+
+.producto-tallas:hover {
+    background-color: var(--color-btn-secundario-hover);
+}
+
+.producto-unidades {
+    font-size: 12px;
+    margin-bottom: 16px;
+    color: #999;
+    text-align: right;
+}
+
+.btn-primario {
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 16px;
+    background-color: var(--color-primario);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: var(--color-primario-hover);
+}
+
+.btn-secundario {
+    width: auto;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: var(--color-primario);
+    font-size: 16px;
+    font-weight: 900;
+    border: 2px solid var(--color-primario);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right; /* Alinea el botón a la derecha */
+}
+
+.btn-secundario:hover {
+    background-color: var(--color-btn-secundario-hover);
+}
+
+
+
+
