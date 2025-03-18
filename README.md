@@ -33,36 +33,57 @@ Revisión de entregables por parte del profesorado.
 3. Documento de equipo que detalle:
 
 CEREMONIA 1:
-Analizámos el reto que nos proponen y 
+Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
+HISTORIAS DE USUARIO:
+
+  ÉPICA:
+
+    Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
+
+
+  FUNCIONALIDADES:
+
+    Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
+    Dashboard: con diferentes artículos
+    Header
+
+
+  COMPONENTES CON SU ROL:
+
+    Diseño prototipo - Orlando
+    Tarjeta de producto estructura - Esti
+    Tarjeta de producto estilo - Esti
+    Header estructura - Esti
+    Header estilo - Esti
+    Menú vertical formato desktop estructura - Ion
+    Menú vertical formato desktop estilo - Ion
+    Menú vertical formato mobile estructura - Ion
+    Menú vertical formato mobile estilo (media) - Ion
+    Enlazar y filtrar - Todos
   - Nombre del Equipo: IOE
 
-  - Componentes con su rol:
-  - Esti: Desarrolla la parte de HTML de las cards
-  - Orlando: Trabaja en todo lo relacionado con el diseño y el CSS de la página web.
-  - Ion: SCRUM Master, desarrolla el menu y que sea responsive.
-
-  - Normas internas:
+  NORMAS INTERNAS:
     1) 
 
-  - Objetivos de equipo:
+  OBJETIVOS DEL EQUIPO:
     1) Optimizar la comunicación asertiva
     2) Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
     3) Continuar adquiriendo conocimientos de cómo trabajar en equipo con Git Hub (ramas)
     4) Analizar historias de usuario en equipo y trabajar en base a ello la retrospectiva y división de tareas
 
-  - Compromisos del equipo:
+  COMPROMISOS DEL EQUIPO:
     1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
 
   SPRING 1:
   Tiempo establecido: Lunes de 12 a 14:30
   Compromisos:
-    - Esti:
-    - Orlando:
-    - Ion: 
+    - Esti: Diseñar las card
+    - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
+    - Ion: Diseñar el menu
   
-  Ceremonia Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
+  CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
   SPRING 2:
-  8:30 Daily 
+  
 
 
 
