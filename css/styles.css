@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-producto {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.img-producto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.producto-precio {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.producto-precio-tachado {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    padding-right: 24px;
+}
+
+.producto-unidades {
+    font-size: 16px;
+    margin: 16px 0;
+    color: #999;
+}
