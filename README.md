@@ -82,8 +82,9 @@ HISTORIAS DE USUARIO:
     - Ion: Diseñar el menu
   
   CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
-  SPRING 2:
+  Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
   
+  CEREMONIA 3: Miércoles 
 
 
 

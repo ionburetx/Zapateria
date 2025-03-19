@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
+
 function closeMenu() {
   document.getElementById("menu").style.display = "none";
   document.getElementById("overlay").style.display = "none";

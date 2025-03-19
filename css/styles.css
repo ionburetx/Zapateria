@@ -126,9 +126,6 @@ nav {
     font-size: 20px;
 }
 
-#menu a:hover {
-    background: #c72929;
-}
 
 .submenu {
     display: none;
@@ -136,14 +133,47 @@ nav {
     position: relative;
     width: 100%;
     overflow: visible;
-    padding: 8px;;
+    padding: 8px 8px;
 }
 
-#menu li:hover .submenu {
-    display: block; /* Muestra las subcategorías al pasar el mouse por encima */
-    max-height: 250px;
+.submenu li {
+    padding: 20px 10px;
+    text-align: left;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+.submenu li:hover {
+    background: #c72929;
+    transition: all 0.3s ease;
+}
+
+.submenu-toggle {
+    display: none;
+}
+
+.submenu-toggle:checked + .submenu {
+    display: block;
+}
+
+
+label {
+    padding: 20px 10px;
+    display: block;
+}
+
+label:hover {
+    background: #c72929;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #menu {
+        width: 100%;
+    }
+}
 
 /*.hamburger {
     font-size: 30px;
