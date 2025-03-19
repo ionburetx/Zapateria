@@ -133,7 +133,6 @@ nav {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 20px;
 }
 
 
@@ -166,6 +165,16 @@ nav {
     display: block;
 }
 
+.submenu-todos {
+    padding: 20px 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.submenu-todos:hover {
+    background: #c72929;
+    transition: all 0.3s ease;
+}
 
 label {
     padding: 20px 10px;
@@ -313,3 +322,4 @@ p {
     #menu {
         width: 100%;
     }
+}
