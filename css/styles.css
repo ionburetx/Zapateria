@@ -231,6 +231,75 @@ label:hover {
     transition: all 0.3s ease;
 }
 
+
+
+/* Estilos de la sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 32px 0;
+    gap: 16px;
+}
+
+.card-producto {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.card-producto:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    border: 3px solid var(--color-btn-secundario-hover);
+    .main-producto > h3 {
+        text-decoration: underline;
+    }
+}
+
+.img-producto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-producto > h3 {
+    font-size: 24px;
+    margin: 16px 0;
+    padding-top: 32px;
+}
+
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.precio-producto-unidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.producto-precio {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0;
+    text-align: right;
+}
+
+.producto-precio-tachado {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    padding-right: 24px;
+}
+
 .tallas-unidades {
     float: right;
     margin-top: 16px;
