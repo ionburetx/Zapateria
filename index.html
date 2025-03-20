@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Home</title>
     <meta charset="utf-8">
@@ -8,21 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/scripts.js"></script>
 </head>
+
 <body class="body-general">
     <header class="header-general">
         <h1>Zapatería</h1>
         <div id="cart-container">
             <i class="fas fa-shopping-cart"></i>
-        <span id="cart-count">0</span>
-    </div>    
+            <span id="cart-count">0</span>
+        </div>
     </header>
     <main class="main-general">
-        <div id="overlay" class=" overlay"></div> 
+        <div id="overlay" class=" overlay"></div>
         <button id="openMenuButton"><img class="icono-filtro" src="/assets/filtros.png"></button>
         <nav id="menu">
             <button id="closeMenuButton">X</button>
             <ul class="ulmenu">
-                <a href="#" class="submenu-todos" data-filter="all">TODOS</a>
+                <a href="#" class="submenu-todos" data-filter="all" id="all">TODOS</a>
                 <li>
                     <label for="submenu-deportivo">DEPORTIVO</label>
                     <input type="checkbox" id="submenu-deportivo" class="submenu-toggle">
@@ -54,7 +56,7 @@
         </nav>
 
         <section class="productos">
-            <article class="card-producto card-deportivo-ninos">
+            <article class="card-producto card-deportivo-ninos" id="card-deportivo-ninos">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -63,15 +65,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -93,7 +95,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-deportivo-mujer">
+            <article class="card-producto card-deportivo-mujer" id="card-deportivo-mujer">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -102,15 +104,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -132,7 +134,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-deportivo-hombre">
+            <article class="card-producto card-deportivo-hombre" id="card-deportivo-hombre">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -141,15 +143,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -171,7 +173,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-botas-ninos">
+            <article class="card-producto card-botas-ninos" id="card-botas-ninos">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -180,15 +182,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -210,7 +212,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-botas-mujer">
+            <article class="card-producto card-botas-mujer" id="card-botas-mujer">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -219,15 +221,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -249,7 +251,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-botas-hombre">
+            <article class="card-producto card-botas-hombre" id="card-botas-hombre">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -258,15 +260,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -288,7 +290,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-sandalias-ninos">
+            <article class="card-producto card-sandalias-ninos" id="card-sandalias-ninos">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -297,15 +299,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -327,7 +329,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-sandalias-mujer">
+            <article class="card-producto card-sandalias-mujer" id="card-sandalias-mujer">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -336,15 +338,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -366,7 +368,7 @@
                     <button class="btn-primario">Comprar</button>
                 </footer>
             </article>
-            <article class="card-producto card-sandalias-hombre">
+            <article class="card-producto card-sandalias-hombre" id="card-sandalias-hombre">
                 <header class="header-producto">
                     <img src="assets/running-shoe-371624_1280.jpg" alt="deportiva-rosa" class="img-producto">
                     <section>
@@ -375,15 +377,15 @@
                 </header>
                 <main class="main-producto">
                     <h3>Deportivas rosas</h3>
-                    <p>Estas deportivas son perfectas para tus entrenamientos diarios. 
-                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario 
-                        para tus actividades físicas. Sus materiales de alta calidad, 
+                    <p>Estas deportivas son perfectas para tus entrenamientos diarios.
+                        Con un diseño moderno y cómodo, te proporcionarán el soporte necesario
+                        para tus actividades físicas. Sus materiales de alta calidad,
                         garantizan durabilidad y resistencia.</p>
-                        <section class="precio-producto-unidades">
-                            <section class="precio-tachado-final">
-                                <p class="producto-precio-tachado">48,45€</p>
-                                <p class="producto-precio">35,99€</p>
-                            </section>
+                    <section class="precio-producto-unidades">
+                        <section class="precio-tachado-final">
+                            <p class="producto-precio-tachado">48,45€</p>
+                            <p class="producto-precio">35,99€</p>
+                        </section>
                         <section class="tallas-unidades">
                             <select class="producto-tallas">
                                 <option>36</option>
@@ -410,6 +412,7 @@
     <footer>
     </footer>
 
-    
+
 </body>
+
 </html>
