@@ -369,8 +369,7 @@ p {
       margin-top: 20px;
       font-size: 14pt;
     }
-  }
-  
+ } 
   
 
 #cart-container {
@@ -431,8 +430,8 @@ p {
     }
   }
 
-  * Estilos para la responsividad */
-  @media screen and (max-width: 600px) {
+  /* Estilos para la responsividad */
+@media screen and (max-width: 600px) {
     .cart-row {
       flex-direction: column;
       align-items: center;

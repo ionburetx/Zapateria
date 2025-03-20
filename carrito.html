@@ -13,25 +13,8 @@
         <h1>Carrito de Compras</h1>
     </header>
     <main class="main-general">
-        <nav id="menu">
-            <ul class="ulmenu">
-                <li>
-                    <a href="#" class="submenu-todos" data-filter="all">Mostrar todos</a>
-                </li>
-                <li>
-                    <label for="submenu-deportivo">DEPORTIVO</label>
-                    <input type="checkbox" id="submenu-deportivo" class="submenu-toggle">
-                    <ul class="submenu">
-                        <li><a href="#" data-filter="card-deportivo-ninos">Niños</a></li>
-                        <li><a href="#" data-filter="card-deportivo-mujer">Mujer</a></li>
-                        <li><a href="#" data-filter="card-deportivo-hombre">Hombre</a></li>
-                    </ul>
-                </li>
-                <!-- Otros elementos del menú -->
-            </ul>
-        </nav>
         <section class="productos">
-            <div id="cart-container">
+            <div id="cart-container" class="productos">
                 <!-- Las filas de productos se agregarán aquí dinámicamente -->
             </div>
             <div id="total-container">
@@ -41,6 +24,9 @@
             <button id="print-cart">Imprimir Carrito</button>
         </section>
     </main>
+    <div id="carrito">
+        <!-- Aquí se mostrarán los productos del carrito -->
+    </div>
     <footer>
     </footer>
 </body>
