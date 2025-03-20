@@ -192,9 +192,9 @@ label:hover {
 .productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 32px 0;
-    gap: 16px;
+    gap: 32px;
+    row-gap: 32px;
+    justify-content: space-around;
 }
 
 .card-producto {
@@ -206,15 +206,14 @@ label:hover {
     padding: 24px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
 .card-producto:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
     border: 3px solid var(--color-btn-secundario-hover);
-    .main-producto > h3 {
-        text-decoration: underline;
-    }
 }
 
 .img-producto {
@@ -252,7 +251,12 @@ p {
     font-size: 16px;
     text-decoration: line-through;
     color: #999;
-    padding-right: 24px;
+    padding-right: 8px;
+}
+
+.precio-tachado-final {
+    display: flex;
+
 }
 
 .tallas-unidades {

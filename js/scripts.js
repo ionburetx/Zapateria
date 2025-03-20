@@ -1,4 +1,70 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // CARCAR ARCHIVO JSON. 
+  // El método fetch permite cargar el archivo JSON de forma asincrona.
+  fetch("assets/data.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Error al cargar el archivo JSON");
+      }
+      return response.json(); // Convierte la respuesta a JSON
+    })
+    .then(data => {
+      console.log(data); // Verifica que los datos se carguen correctamente
+      mostrarProductos(data.zapatillas); // Llama a la función para mostrar los productos
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+  // Función para mostrar los productos que recorre los datos del JSON 
+  // y genere dinámicamente el HTML para cada producto.
+  function mostrarProductos(zapatillas) {
+    const contenedorProductos = document.querySelector(".productos"); // Selecciona el contenedor donde se mostrarán los productos
+    contenedorProductos.innerHTML = ""; // Limpia el contenedor antes de insertar nuevos productos
+
+    zapatillas.forEach(categoria => {
+      categoria.productos.forEach(producto => {
+        // Crea el HTML para cada producto
+        const productoHTML = `
+          <article class="card-producto ${categoria.categoria}-${categoria.subcategoria}">
+            <header class="header-producto">
+              <img src="${producto.imagen}" alt="${producto.titulo}" class="img-producto">
+              <section>
+                <button class="btn-secundario"><i class="fas fa-heart"></i></button>
+              </section>
+            </header>
+            <main class="main-producto">
+              <h3>${producto.titulo}</h3>
+              <p>${producto.descripcion}</p>
+              <section class="precio-producto-unidades">
+                <section class="precio-tachado-final">
+                  <p class="producto-precio-tachado">${producto.precioAnterior}€</p>
+                  <p class="producto-precio">${producto.precioActual}</p>
+                </section>
+                <section class="tallas-unidades">
+                  <select class="producto-tallas">
+                    ${producto.tallas.map(talla => `<option>${talla}</option>`).join("")}
+                  </select>
+                  <p class="producto-unidades">${producto.unidades} ud.</p>
+                </section>
+              </section>
+            </main>
+            <footer class="main-producto">
+              <button class="btn-primario">Comprar</button>
+            </footer>
+          </article>
+        `;
+  
+        // Inserta el producto en el contenedor
+        contenedorProductos.innerHTML += productoHTML;
+      });
+    });
+
+    // Aplica los filtros después de generar las tarjetas
+    applyFilters();
+  }
+  
+  
   // Función para filtrar las tarjetas
   function filterCards(filter) {
     const cards = document.querySelectorAll(".card-producto");
@@ -12,22 +78,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Añade eventos a los enlaces del menú
-  const menuLinks = document.querySelectorAll(".submenu a");
-  menuLinks.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault(); // Evita que el enlace recargue la página
-      const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
-      filterCards(filterId); // Llama a la función de filtrado
+  function applyFilters() {
+    const menuLinks = document.querySelectorAll(".submenu a");
+    menuLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // Evita que el enlace recargue la página
+        const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
+        filterCards(filterId); // Llama a la función de filtrado
+        closeMenu(); // Cierra el menú después de hacer clic en un enlace
+      });
     });
 
-  // Añade evento al filtro todos
-  const showAllLink = document.querySelector(".submenu-todos");
-  showAllLink.addEventListener("click", function (e) {
-      e.preventDefault(); // Evita que el enlace recargue la página
-      const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
-      filterCards(filterId); // Llama a la función de filtrado
-    });
-  });
+    // Añade evento al filtro todos
+    const showAllLink = document.querySelector(".submenu-todos");
+    showAllLink.addEventListener("click", function (e) {
+        e.preventDefault(); // Evita que el enlace recargue la página
+        const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
+        filterCards(filterId); // Llama a la función de filtrado
+        closeMenu(); // Cierra el menú después de hacer clic en un enlace
+      });
+  }
 
 
   // Función para cerrar y abrir el menú
@@ -39,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("menu").style.display = "block";
       document.getElementById("overlay").style.display = "block";
     }
-  
+
   document.getElementById("closeMenuButton").addEventListener("click", closeMenu);
   document.getElementById("openMenuButton").addEventListener("click", openMenu);
   document.getElementById("overlay").addEventListener("click", closeMenu);
