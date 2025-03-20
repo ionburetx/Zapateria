@@ -31,7 +31,7 @@
     justify-content: space-between;
     height: 130px;
     background: #adadad;
-    color: rgb(58, 190, 230);
+    color: rgb(0, 7, 9);
     padding: 10px 0;
     width: 100%;
     position: sticky;
@@ -255,6 +255,12 @@ p {
     padding-right: 24px;
 }
 
+.precio-tachado-final {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
 .tallas-unidades {
     float: right;
     margin-top: 16px;
@@ -316,10 +322,128 @@ p {
     background-color: var(--color-btn-secundario-hover);
 }
 
+/* Estilos para la estructura del carrito */
+.cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-row > div {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .cart-row img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #total-container {
+    margin-top: 20px;
+    font-size: 14pt;
+  }
+
+  /* Estilos para la impresión */
+@media print {
+    body {
+      font-size: 12pt;
+    }
+  
+    .cart-row {
+      display: table-row;
+    }
+  
+    .cart-row > div {
+      display: table-cell;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+  
+    #clear-cart, #print-cart {
+      display: none; /* Ocultar botones en la impresión */
+    }
+  
+    #total-container {
+      margin-top: 20px;
+      font-size: 14pt;
+    }
+  }
+  
+  
+
+#cart-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#cart-container i {
+    margin-right: 10px;
+}
+
+#cart-count {
+    font-size: 0.8em;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+
 /* Estilos media */
 
 @media screen and (max-width: 480px) {
     #menu {
         width: 100%;
     }
+    
 }
+
+@media print {
+    body {
+      font-size: 12pt;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+  
+    #clear-cart, #print-cart {
+      display: none; /* Ocultar botones en la impresión */
+    }
+  
+    #total-container {
+      margin-top: 20px;
+      font-size: 14pt;
+    }
+  }
+
+  * Estilos para la responsividad */
+  @media screen and (max-width: 600px) {
+    .cart-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-row > div {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #total-container {
+      text-align: center;
+    }
+  }

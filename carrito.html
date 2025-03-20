@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Carrito de Compras</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/carrito.js"></script>
+</head>
+<body class="body-general">
+    <header class="header-general">
+        <h1>Carrito de Compras</h1>
+    </header>
+    <main class="main-general">
+        <nav id="menu">
+            <ul class="ulmenu">
+                <li>
+                    <a href="#" class="submenu-todos" data-filter="all">Mostrar todos</a>
+                </li>
+                <li>
+                    <label for="submenu-deportivo">DEPORTIVO</label>
+                    <input type="checkbox" id="submenu-deportivo" class="submenu-toggle">
+                    <ul class="submenu">
+                        <li><a href="#" data-filter="card-deportivo-ninos">Niños</a></li>
+                        <li><a href="#" data-filter="card-deportivo-mujer">Mujer</a></li>
+                        <li><a href="#" data-filter="card-deportivo-hombre">Hombre</a></li>
+                    </ul>
+                </li>
+                <!-- Otros elementos del menú -->
+            </ul>
+        </nav>
+        <section class="productos">
+            <div id="cart-container">
+                <!-- Las filas de productos se agregarán aquí dinámicamente -->
+            </div>
+            <div id="total-container">
+                <strong>Total: </strong><span id="total-amount">0€</span>
+            </div>
+            <button id="clear-cart">Limpiar Carrito</button>
+            <button id="print-cart">Imprimir Carrito</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
