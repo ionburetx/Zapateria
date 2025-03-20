@@ -37,19 +37,14 @@ Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
 HISTORIAS DE USUARIO:
 
   ÉPICA:
-
     Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
 
-
   FUNCIONALIDADES:
-
     Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
     Dashboard: con diferentes artículos
     Header
 
-
   COMPONENTES CON SU ROL:
-
     Diseño prototipo - Orlando
     Tarjeta de producto estructura - Esti
     Tarjeta de producto estilo - Esti
@@ -60,7 +55,6 @@ HISTORIAS DE USUARIO:
     Menú vertical formato mobile estructura - Ion
     Menú vertical formato mobile estilo (media) - Ion
     Enlazar y filtrar - Todos
-  - Nombre del Equipo: IOE
 
   NORMAS INTERNAS:
     1) 
@@ -74,18 +68,27 @@ HISTORIAS DE USUARIO:
   COMPROMISOS DEL EQUIPO:
     1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
 
-  SPRING 1:
-  Tiempo establecido: Lunes de 12 a 14:30
+  SPRINT 1:
+  Tiempo establecido: Lunes 8:30 - Miercoles 2:30
+  Después de concretar lo que nos piden y lo que vamos a hacer. Creamos un repositorio en el GitHub y creamos un documento HTML con la estructura básica que tendrá el catálogo y las rama (dev). Hicimos push, y desde ahí ya creamos cada uno su rama (menu y card) para empezar a trabajar en lo que se le ha asignado a cada uno.
   Compromisos:
-    - Esti: Diseñar las card
     - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
+    - Esti: Diseñar las card
     - Ion: Diseñar el menu
   
-  CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
+  DAILY Martes 8:30 (Se decide para el segundo SPRING lo siguiente): 
   Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
-  
-  CEREMONIA 3: Miércoles 
 
+  JORNADA DEL MARTES: Seguimos avanzando con el código para hacer el menu y las cards.
+  
+  DAILY Miercoles 8:30 (Toca unir las ramas para hacer el JS)
+  
+  JORNADA DEL MIERCOLES: Finalizamos de hacer las tareas en las ramas menu y card y mergeamos todo en la rama dev para ver como queda y trabajar con JS para vincular las cards a sus correspondientes categorías en el menu. 
+  
+  FIN DEL SPRINT 1
+
+  CEREMONIA 2: Jueves 8:30 
+  Decidimos hacer algún cambio de JS para que el menu desaparezca al hacer la selección de una de las categorías. Por otro lado, 
 
 
   - Reflexión:

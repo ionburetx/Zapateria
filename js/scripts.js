@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault(); // Evita que el enlace recargue la página
       const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
       filterCards(filterId); // Llama a la función de filtrado
+      closeMenu(); // Cierra el menú después de hacer clic en un enlace
     });
 
   // Añade evento al filtro todos
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault(); // Evita que el enlace recargue la página
       const filterId = this.getAttribute("data-filter"); // Obtén el filtro del enlace
       filterCards(filterId); // Llama a la función de filtrado
+      closeMenu(); // Cierra el menú después de hacer clic en un enlace
     });
   });
 
@@ -39,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("menu").style.display = "block";
       document.getElementById("overlay").style.display = "block";
     }
-  
+
   document.getElementById("closeMenuButton").addEventListener("click", closeMenu);
   document.getElementById("openMenuButton").addEventListener("click", openMenu);
   document.getElementById("overlay").addEventListener("click", closeMenu);

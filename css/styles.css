@@ -71,9 +71,9 @@ button {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 130px;
-    background: #adadad;
+    background: #ffffff;
     color: rgb(58, 190, 230);
     padding: 10px 0;
     width: 100%;
@@ -81,6 +81,11 @@ header {
     text-align: center;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    max-width: 150px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantén la proporción del logo */
 }
 
 .icono-filtro {
