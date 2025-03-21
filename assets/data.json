@@ -11,7 +11,8 @@
             "precioAnterior": 49.99,
             "precioActual": 29.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 50
+            "unidades": 50,
+            "id": 1
           },
           {
             "imagen": "https://www.calzaditos.com/4578-large_default/deportivas-para-ninos-con-camara-de-aire-de-jhayber.jpg",
@@ -20,7 +21,8 @@
             "precioAnterior": 49.99,
             "precioActual": 39.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 50
+            "unidades": 50,
+            "id": 2
           }
         ]
       },
@@ -35,7 +37,8 @@
             "precioAnterior": 49.99,
             "precioActual": 39.99,
             "tallas": [36, 37, 38, 39, 40],
-            "unidades": 50
+            "unidades": 50,
+            "id": 3
           },
           {
             "imagen": "https://fanatikmoda.com/3144-large_default/zapatillas-deportivas-mujer-piel-negro.jpg",
@@ -44,7 +47,8 @@
             "precioAnterior": 49.99,
             "precioActual": 39.99,
             "tallas": [36, 37, 38, 39, 40],
-            "unidades": 50
+            "unidades": 50,
+            "id": 4
           }
         ]
       },
@@ -59,7 +63,8 @@
             "precioAnterior": 49.99,
             "precioActual": 39.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 50
+            "unidades": 50,
+            "id": 5
           },
           {
             "imagen": "https://www.zapatodirecto.com/57996-large_default/zapatillas-deportivas-hombre-blancas-mod-jordi.jpg",
@@ -68,7 +73,8 @@
             "precioAnterior": 49.99,
             "precioActual": 39.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 50
+            "unidades": 50,
+            "id": 6
           }
         ]
       },
@@ -83,7 +89,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 30
+            "unidades": 30,
+            "id": 7
           },
           {
             "imagen": "https://www.minishoes.es/7682-large_default/botas-ninos-serraje-forradas-la-cadena.jpg",
@@ -92,7 +99,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 30
+            "unidades": 30,
+            "id": 8
           }
         ]
       },
@@ -107,7 +115,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [36, 37, 38, 39, 40],
-            "unidades": 30
+            "unidades": 30,
+            "id": 9
           },
           {
             "imagen": "https://zapateriasbogar.com/wp-content/uploads/2024/10/botas-mujer-skechers-uno-rugged-darling-days-blanco.jpg",
@@ -116,7 +125,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [36, 37, 38, 39, 40],
-            "unidades": 30
+            "unidades": 30,
+            "id": 10
           }
         ]
       },
@@ -131,7 +141,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 30
+            "unidades": 30,
+            "id": 11
           },
           {
             "imagen": "https://www.zapatoideal.com/4662/botas-hombre-piel-marron-tacon-cordones.jpg",
@@ -140,7 +151,8 @@
             "precioAnterior": 89.99,
             "precioActual": 79.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 30
+            "unidades": 30,
+            "id": 12
           }
         ]
       },
@@ -155,7 +167,8 @@
             "precioAnterior": 59.99,
             "precioActual": 49.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 40
+            "unidades": 40,
+            "id": 13
           },
           {
             "imagen": "https://www.calzaditos.com/2825-large_default/sandalias-de-piel-multicolor-para-nino-de-pablosky.jpg",
@@ -164,7 +177,8 @@
             "precioAnterior": 59.99,
             "precioActual": 49.99,
             "tallas": [28, 29, 30, 31, 32],
-            "unidades": 40
+            "unidades": 40,
+            "id": 14
           }
         ]
       },
@@ -188,7 +202,8 @@
             "precioAnterior": 59.99,
             "precioActual": 49.99,
             "tallas": [36, 37, 38, 39, 40],
-            "unidades": 40
+            "unidades": 40,
+            "id": 16
           }
         ]
       },
@@ -203,7 +218,8 @@
             "precioAnterior": 59.99,
             "precioActual": 49.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 40
+            "unidades": 40,
+            "id": 17
           },
           {
             "imagen": "https://keeshoes.es/a/ale/auction_image/image1_176959.s2000/olivier-sandalias-hombre-verano-piel-678ma-negro-2000x2000.jpeg?_=1692119351.7998771",
@@ -212,7 +228,8 @@
             "precioAnterior": 59.99,
             "precioActual": 49.99,
             "tallas": [40, 41, 42, 43, 44],
-            "unidades": 40
+            "unidades": 40,
+            "id": 18
           }
         ]
       }
