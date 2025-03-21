@@ -30,14 +30,35 @@
     align-items: center;
     justify-content: space-between;
     height: 130px;
-    background: #adadad;
+    background: #fff;
     color: rgb(58, 190, 230);
-    padding: 10px 0;
-    width: 100%;
+    padding: 0px 20px;
     position: sticky;
-    text-align: center;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#cart-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #000;
+}
+
+.logo-carrito {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .body-general {
