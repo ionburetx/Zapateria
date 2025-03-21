@@ -1,0 +1,237 @@
+{
+    "zapatillas": [
+      {
+        "categoria": "deportivo",
+        "subcategoria": "ninos",
+        "productos": [
+          {
+            "imagen": "https://www.loszapatitosdealba.com/server/Portal_0009435/img/products/zapatillas-deportivas-bebe-nino-blanca-demax_6525049_15380513.jpg",
+            "titulo": "Zapatilla Deportiva Niño 1",
+            "descripcion": "Zapatilla deportiva blanca con velcro para niños.",
+            "precioAnterior": 49.99,
+            "precioActual": 29.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 50,
+            "id": 1
+          },
+          {
+            "imagen": "https://www.calzaditos.com/4578-large_default/deportivas-para-ninos-con-camara-de-aire-de-jhayber.jpg",
+            "titulo": "Zapatilla Deportiva Niño 2",
+            "descripcion": "Zapatilla deportiva blanca y azul con velcro y cordón para niños.",
+            "precioAnterior": 49.99,
+            "precioActual": 39.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 50,
+            "id": 2
+          }
+        ]
+      },
+      {
+        "categoria": "deportivo",
+        "subcategoria": "mujer",
+        "productos": [
+          {
+            "imagen": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202406/06/00117730952425____9__1200x1200.jpg",
+            "titulo": "Zapatilla Deportiva mujer 1",
+            "descripcion": "Descripción de la zapatilla deportiva para mujer",
+            "precioAnterior": 49.99,
+            "precioActual": 39.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 50,
+            "id": 3
+          },
+          {
+            "imagen": "https://fanatikmoda.com/3144-large_default/zapatillas-deportivas-mujer-piel-negro.jpg",
+            "titulo": "Zapatilla Deportiva mujer 2",
+            "descripcion": "Descripción de la zapatilla deportiva para mujer",
+            "precioAnterior": 49.99,
+            "precioActual": 39.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 50,
+            "id": 4
+          }
+        ]
+      },
+      {
+        "categoria": "deportivo",
+        "subcategoria": "hombre",
+        "productos": [
+          {
+            "imagen": "https://www.autentics.com/32457-large_default/zapatillas-running-hombre-joma-argon-men-2401-black-color-negro-y-blanco-rargow2401.jpg",
+            "titulo": "Zapatilla Deportiva hombre 1",
+            "descripcion": "Descripción de la zapatilla deportiva para hombre",
+            "precioAnterior": 49.99,
+            "precioActual": 39.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 50,
+            "id": 5
+          },
+          {
+            "imagen": "https://www.zapatodirecto.com/57996-large_default/zapatillas-deportivas-hombre-blancas-mod-jordi.jpg",
+            "titulo": "Zapatilla Deportiva hombre 2",
+            "descripcion": "Descripción de la zapatilla deportiva para hombre",
+            "precioAnterior": 49.99,
+            "precioActual": 39.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 50,
+            "id": 6
+          }
+        ]
+      },
+      {
+        "categoria": "botas",
+        "subcategoria": "ninos",
+        "productos": [
+          {
+            "imagen": "https://dospies.es/70939-superlarge_default/botas-casual-tipo-panama-nino-dospies-k232019.jpg",
+            "titulo": "Bota niños 1",
+            "descripcion": "Descripción de la bota para niños",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 30,
+            "id": 7
+          },
+          {
+            "imagen": "https://www.minishoes.es/7682-large_default/botas-ninos-serraje-forradas-la-cadena.jpg",
+            "titulo": "Bota niños 2",
+            "descripcion": "Descripción de la bota para niños",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 30,
+            "id": 8
+          }
+        ]
+      },
+      {
+        "categoria": "botas",
+        "subcategoria": "mujer",
+        "productos": [
+          {
+            "imagen": "https://www.zapatoideal.com/6646/botas-militares-mujer-piel-negro-plataforma-cordones.jpg",
+            "titulo": "Bota Mujer 1",
+            "descripcion": "Descripción de la bota para mujer",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 30,
+            "id": 9
+          },
+          {
+            "imagen": "https://zapateriasbogar.com/wp-content/uploads/2024/10/botas-mujer-skechers-uno-rugged-darling-days-blanco.jpg",
+            "titulo": "Bota Mujer 2",
+            "descripcion": "Descripción de la bota para mujer",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 30,
+            "id": 10
+          }
+        ]
+      },
+      {
+        "categoria": "botas",
+        "subcategoria": "hombre",
+        "productos": [
+          {
+            "imagen": "https://raquelperezshoes.com/12309-large_default/bota-louis-marino-hombre.jpg",
+            "titulo": "Bota hombre 1",
+            "descripcion": "Descripción de la bota para hombre",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 30,
+            "id": 11
+          },
+          {
+            "imagen": "https://www.zapatoideal.com/4662/botas-hombre-piel-marron-tacon-cordones.jpg",
+            "titulo": "Bota hombre 2",
+            "descripcion": "Descripción de la bota para hombre",
+            "precioAnterior": 89.99,
+            "precioActual": 79.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 30,
+            "id": 12
+          }
+        ]
+      },
+      {
+        "categoria": "sandalias",
+        "subcategoria": "ninos",
+        "productos": [
+          {
+            "imagen": "https://www.loszapatitosdealba.com/server/Portal_0009435/img/products/sandalias-nino-blancas-modelo-dtivo-spain_1800464.jpg",
+            "titulo": "Sandalia niños 1",
+            "descripcion": "Descripción de la sandalia para niños",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 40,
+            "id": 13
+          },
+          {
+            "imagen": "https://www.calzaditos.com/2825-large_default/sandalias-de-piel-multicolor-para-nino-de-pablosky.jpg",
+            "titulo": "Sandalia niños 2",
+            "descripcion": "Descripción de la sandalia para niños",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [28, 29, 30, 31, 32],
+            "unidades": 40,
+            "id": 14
+          }
+        ]
+      },
+      {
+        "categoria": "sandalias",
+        "subcategoria": "mujer",
+        "productos": [
+          {
+            "imagen": "https://www.zapateriasrin.com/159678-superlarge_default/184225.jpg",
+            "titulo": "Sandalia mujer 1",
+            "descripcion": "Descripción de la sandalia para mujer",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 40
+          },
+          {
+            "imagen": "https://www.airelibre.es/159643-large_default/paredes-sandalias-mujer-confort-pallas-marron.jpg",
+            "titulo": "Sandalia mujer 2",
+            "descripcion": "Descripción de la sandalia para mujer",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [36, 37, 38, 39, 40],
+            "unidades": 40,
+            "id": 16
+          }
+        ]
+      },
+      {
+        "categoria": "sandalias",
+        "subcategoria": "hombre",
+        "productos": [
+          {
+            "imagen": "https://www.calzadosyolanda.com/40384-superlarge_default/saltway-trail.jpg",
+            "titulo": "Sandalia Hombre 1",
+            "descripcion": "Descripción de la sandalia para hombre",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 40,
+            "id": 17
+          },
+          {
+            "imagen": "https://keeshoes.es/a/ale/auction_image/image1_176959.s2000/olivier-sandalias-hombre-verano-piel-678ma-negro-2000x2000.jpeg?_=1692119351.7998771",
+            "titulo": "Sandalia Hombre 2",
+            "descripcion": "Descripción de la sandalia para hombre",
+            "precioAnterior": 59.99,
+            "precioActual": 49.99,
+            "tallas": [40, 41, 42, 43, 44],
+            "unidades": 40,
+            "id": 18
+          }
+        ]
+      }
+    ]
+}

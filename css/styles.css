@@ -17,27 +17,49 @@
     max-width: 1200px;
     width: 100%;
     margin: auto;
-}
+} 
 
 .icono-filtro {
     cursor: pointer;
     background-color: #747474;
     z-index: 1000;
-}
+} 
 
 .header-general {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 130px;
-    background: #adadad;
-    color: rgb(0, 7, 9);
-    padding: 10px 0;
-    width: 100%;
+    background: #fff;
+    color: #000;
+    padding: 0px 20px;
     position: sticky;
-    text-align: center;
+    top: 0;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#cart-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #000;
+}
+
+.logo-carrito {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .body-general {
@@ -192,9 +214,9 @@ label:hover {
 .productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 32px 0;
-    gap: 16px;
+    gap: 32px;
+    row-gap: 32px;
+    justify-content: space-around;
 }
 
 .card-producto {
@@ -206,15 +228,14 @@ label:hover {
     padding: 24px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
 .card-producto:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
     border: 3px solid var(--color-btn-secundario-hover);
-    .main-producto > h3 {
-        text-decoration: underline;
-    }
 }
 
 .img-producto {
@@ -252,7 +273,7 @@ p {
     font-size: 16px;
     text-decoration: line-through;
     color: #999;
-    padding-right: 24px;
+    padding-right: 8px;
 }
 
 .precio-tachado-final {
