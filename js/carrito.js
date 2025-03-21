@@ -2,14 +2,36 @@ document.addEventListener("DOMContentLoaded", function () {
   // Función para limpiar el carrito
   function clearCart() {
     localStorage.removeItem("cart");
+    localStorage.removeItem("cartCount");
     document.getElementById("cart-container").innerHTML = "";
     document.getElementById("total-amount").textContent = "0€";
     const cartCountElement = document.getElementById("cart-count");
     if (cartCountElement) {
       cartCountElement.textContent = "0";
     }
-    localStorage.clear();
+  }
 
+  // Función para eliminar un producto del carrito
+  function removeProductFromCart(productId) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const productIndex = cart.findIndex(product => product.id === productId);
+    if (productIndex !== -1) {
+      cart.splice(productIndex, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartCount();
+      location.reload(); // Recargar la página para actualizar la vista del carrito
+    }
+  }
+
+  // Función para actualizar el contador del carrito
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartCount = cart.reduce((count, product) => count + product.quantity, 0);
+    localStorage.setItem("cartCount", cartCount);
+    const cartCountElement = document.getElementById("cart-count");
+    if (cartCountElement) {
+      cartCountElement.textContent = cartCount;
+    }
   }
 
   // Evento para el botón de finalizar compra
@@ -23,12 +45,40 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Evento para el botón de ver presupuesto
-  document.getElementById("view-quote").addEventListener("click", function () {
+  const viewQuoteButton = document.getElementById("view-quote");
+  if (viewQuoteButton) {
+    viewQuoteButton.addEventListener("click", function () {
+      const modal = document.getElementById("quote-modal");
+      modal.style.display = "block";
+    });
+  }
+
+  // Manejar el cierre del modal
+  const modal = document.getElementById("quote-modal");
+  const closeModal = document.querySelector(".close");
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Manejar el envío del formulario
+  const quoteForm = document.getElementById("quote-form");
+  quoteForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const surname = document.getElementById("surname").value;
+    const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+
     const quoteWindow = window.open("", "Presupuesto", "width=800,height=600");
     quoteWindow.document.write("<html><head><title>Presupuesto</title>");
     quoteWindow.document.write("<link rel='stylesheet' type='text/css' href='css/styles.css'>");
     quoteWindow.document.write("</head><body>");
     quoteWindow.document.write("<h1>Presupuesto</h1>");
+    quoteWindow.document.write(`<p><strong>Nombre:</strong> ${name}</p>`);
+    quoteWindow.document.write(`<p><strong>Apellido:</strong> ${surname}</p>`);
+    quoteWindow.document.write(`<p><strong>Teléfono:</strong> ${phone}</p>`);
+    quoteWindow.document.write(`<p><strong>Dirección:</strong> ${address}</p>`);
     quoteWindow.document.write("<div id='quote-container' class='productos'>");
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -54,12 +104,17 @@ document.addEventListener("DOMContentLoaded", function () {
     quoteWindow.document.write("<button onclick='window.print()'>Imprimir Presupuesto</button>");
     quoteWindow.document.write("</body></html>");
     quoteWindow.document.close();
+
+    modal.style.display = "none";
   });
 
   // Evento para el botón de continuar comprando
-  document.getElementById("continue-shopping").addEventListener("click", function () {
-    window.location.href = "index.html"; // Redirigir a la página principal o a otra página de productos
-  });
+  const continueShoppingButton = document.getElementById("continue-shopping");
+  if (continueShoppingButton) {
+    continueShoppingButton.addEventListener("click", function () {
+      window.location.href = "index.html"; // Redirigir a la página principal o a otra página de productos
+    });
+  }
 
   // Mostrar los productos en el carrito
   const cartContainer = document.querySelector("#cart-container");
@@ -96,6 +151,14 @@ document.addEventListener("DOMContentLoaded", function () {
     totalCell.textContent = productTotal.toFixed(2) + "€";
     productRow.appendChild(totalCell);
 
+    // Añadir botón de eliminar
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Eliminar";
+    deleteButton.addEventListener("click", function () {
+      removeProductFromCart(product.id);
+    });
+    productRow.appendChild(deleteButton);
+
     cartContainer.appendChild(productRow);
 
     // Sumar al total
@@ -106,14 +169,21 @@ document.addEventListener("DOMContentLoaded", function () {
   totalAmount.textContent = total.toFixed(2) + "€";
 
   // Añadir evento de clic para limpiar el carrito
-  document.getElementById("clear-cart").addEventListener("click", function () {
-    localStorage.clear();
-    cartContainer.innerHTML = ""; // Limpiar la tabla del carrito
-    totalAmount.textContent = "0€"; // Reiniciar el total
-  });
+  const clearCartButton = document.getElementById("clear-cart");
+  if (clearCartButton) {
+    clearCartButton.addEventListener("click", function () {
+      clearCart();
+    });
+  }
 
   // Añadir evento de clic para imprimir el carrito
-  document.getElementById("print-cart").addEventListener("click", function () {
-    window.print();
-  });
+  const printCartButton = document.getElementById("print-cart");
+  if (printCartButton) {
+    printCartButton.addEventListener("click", function () {
+      window.print();
+    });
+  }
+
+  // Actualizar el contador del carrito al cargar la página
+  updateCartCount();
 });
