@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Función para limpiar el carrito
   function clearCart() {
     localStorage.removeItem("cart");
-    localStorage.removeItem("cartCount");
     document.getElementById("cart-container").innerHTML = "";
     document.getElementById("total-amount").textContent = "0€";
     const cartCountElement = document.getElementById("cart-count");
@@ -108,13 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "none";
   });
 
-  // Evento para el botón de continuar comprando
-  const continueShoppingButton = document.getElementById("continue-shopping");
-  if (continueShoppingButton) {
-    continueShoppingButton.addEventListener("click", function () {
-      window.location.href = "index.html"; // Redirigir a la página principal o a otra página de productos
-    });
-  }
+
 
   // Mostrar los productos en el carrito
   const cartContainer = document.querySelector("#cart-container");
@@ -143,7 +136,43 @@ document.addEventListener("DOMContentLoaded", function () {
     productRow.appendChild(priceCell);
 
     const quantityCell = document.createElement("div");
-    quantityCell.textContent = product.quantity;
+
+    // Botón de decremento
+    const decrementButton = document.createElement("button");
+    decrementButton.textContent = "-";
+    decrementButton.classList.add("decrementar-cantidad");
+    decrementButton.addEventListener("click", function () {
+      if (product.quantity > 1) {
+        product.quantity--;
+        quantitySpan.textContent = product.quantity;
+        updateProductTotal(product, totalCell);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        updateTotalAmount();
+      }
+    });
+    quantityCell.appendChild(decrementButton);
+
+    // Span de cantidad
+    const quantitySpan = document.createElement("span");
+    quantitySpan.textContent = product.quantity;
+    quantitySpan.classList.add("producto-cantidad");
+    quantityCell.appendChild(quantitySpan);
+
+    // Botón de incremento
+    const incrementButton = document.createElement("button");
+    incrementButton.textContent = "+";
+    incrementButton.classList.add("incrementar-cantidad");
+    incrementButton.addEventListener("click", function () {
+      product.quantity++;
+      quantitySpan.textContent = product.quantity;
+      updateProductTotal(product, totalCell);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartCount();
+      updateTotalAmount();
+    });
+    quantityCell.appendChild(incrementButton);
+
     productRow.appendChild(quantityCell);
 
     const totalCell = document.createElement("div");
@@ -181,8 +210,32 @@ document.addEventListener("DOMContentLoaded", function () {
     total += productTotal;
   });
 
-  // Mostrar el total
-  totalAmount.textContent = total.toFixed(2) + "€";
+  // Evento para el botón de continuar comprando
+  const continueShoppingButton = document.getElementById("continue-shopping");
+
+  if (continueShoppingButton) {
+    updateTotalAmount();
+    continueShoppingButton.addEventListener("click", function () {
+      window.location.href = "index.html"; // Redirigir a la página principal o a otra página de productos
+    });
+  }
+
+  // Función para actualizar el total de un producto
+  function updateProductTotal(product, totalCell) {
+    const productTotal = parseFloat(product.price.replace("€", "")) * product.quantity;
+    totalCell.textContent = productTotal.toFixed(2) + "€";
+  }
+
+  // Función para actualizar el total del carrito
+  function updateTotalAmount() {
+    let total = 0;
+    cart.forEach(product => {
+      const productTotal = parseFloat(product.price.replace("€", "")) * product.quantity;
+      total += productTotal;
+    });
+    localStorage.setItem("totalAmount", total);
+    totalAmount.textContent = total.toFixed(2) + "€";
+  }
 
   // Añadir evento de clic para limpiar el carrito
   const clearCartButton = document.getElementById("clear-cart");

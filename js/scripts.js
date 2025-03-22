@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
           name: this.closest(".card-producto").querySelector("h3").textContent,
           price: this.closest(".card-producto").querySelector(".producto-precio").textContent,
           image: this.closest(".card-producto").querySelector("img").src,
-          quantity: 1
-
+          quantity: 1,
+          totalAmount: 0
         };
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         let existingProduct = cart.find(item => item.id === productId);
