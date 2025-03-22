@@ -152,10 +152,26 @@ document.addEventListener("DOMContentLoaded", function () {
     productRow.appendChild(totalCell);
 
     // Añadir botón de eliminar
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Eliminar";
+    const deleteButton = document.createElement("div");
+    deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteButton.addEventListener("click", function () {
-      removeProductFromCart(product.id);
+      if (product.quantity > 1) {
+        const quantityToRemove = parseInt(prompt(`¿Cuántas unidades de ${product.name} deseas eliminar?`, "1"));
+        if (!isNaN(quantityToRemove) && quantityToRemove > 0 && quantityToRemove <= product.quantity) {
+          product.quantity -= quantityToRemove;
+          if (product.quantity === 0) {
+            removeProductFromCart(product.id);
+          } else {
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+            location.reload(); // Recargar la página para actualizar la vista del carrito
+          }
+        } else {
+          alert("Cantidad no válida.");
+        }
+      } else {
+        removeProductFromCart(product.id);
+      }
     });
     productRow.appendChild(deleteButton);
 
