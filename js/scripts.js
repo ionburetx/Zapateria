@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => {
       console.error("Error:", error);
     });
+
+
   // Función para mostrar los productos que recorre los datos del JSON 
   // y genere dinámicamente el HTML para cada producto.
   function mostrarProductos(zapatillas) {
@@ -59,6 +61,80 @@ document.addEventListener("DOMContentLoaded", function () {
         contenedorProductos.innerHTML += productoHTML;
       });
     });
+
+  //FAVORITOS
+    //Array para almacenar los favoritos
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    //Asigna eventos a los botones favoritos después de generar las tarjetas
+    //Marcar el botón del corazón cuando se le hace click
+    // Selecciona todos los botones con la clase btn-secundario
+    const secondaryButtons = document.querySelectorAll(".btn-secundario");
+
+    secondaryButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Alterna la clase "marked" en el botón clicado
+            this.classList.toggle("marked");
+
+        //Obtén el producto relacionado con el botón
+        const card = this.closest(".card-producto");
+        const productId = card.getAttribute("id");
+        const product = {
+            id: productId,
+            name: card.querySelector("h3").textContent,
+            price: card.querySelector(".producto-precio").textContent,
+            image: card.querySelector("img").src
+        };
+
+        // Verifica si el producto ya está en favoritos
+        const index = favoritos.findIndex(item => item.id === productId);
+        if (index === -1) {
+            // Si no está en favoritos, lo añade
+            favoritos.push(product);
+        } else {
+            // Si ya está en favoritos, lo elimina
+            favoritos.splice(index, 1);
+        }
+
+        // Actualiza el localStorage
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+        });
+    });
+    //Función para renderizar los productos favoritos en una sección
+    function mostrarFavoritos() {
+      // Selecciona el contenedor de favoritos
+      const contenedorFavoritos = document.querySelector(".favoritos"); 
+      // Limpia el contenedor antes de insertar nuevos productos
+      contenedorFavoritos.innerHTML = ""; 
+
+      const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+  
+      if (favoritos.length === 0) {
+          contenedorFavoritos.innerHTML = "<p>No tienes productos favoritos.</p>";
+          return;
+      }
+  
+      favoritos.forEach(producto => {
+          const productoHTML = `
+              <article class="card-producto" id="${producto.id}">
+                  <header class="header-producto">
+                      <img src="${producto.image}" alt="${producto.name}" class="img-producto">
+                  </header>
+                  <main class="main-producto">
+                      <h3>${producto.name}</h3>
+                      <p>${producto.price}</p>
+                  </main>
+              </article>
+          `;
+          contenedorFavoritos.innerHTML += productoHTML;
+      });
+
+      
+
+
+      // Desplázate automáticamente al contenedor de favoritos
+      contenedorFavoritos.scrollIntoView({ behavior: "smooth" });
+  }
 
 // CARRITO
   // Incrementar el contador del carrito de compras

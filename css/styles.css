@@ -66,10 +66,32 @@
     background-color: rgb(250, 243, 243);
 }
 
+.fa-circle-up {
+    font-size: 48px;
+    color: var(--color-primario);
+    cursor: pointer;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.fa-circle-up:hover {
+    color: var(--color-primario-hover);
+}
+
+#top {
+    scroll-margin-top: 150px;
+}
+
 /* Estilos menú*/
 .icono-filtro {
     width: 24px;
     background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 20;
+    margin: 0, 8px;
 }
 
 
@@ -115,6 +137,7 @@ nav {
 }
 
 #menu {
+    z-index: 1000;
     display: none;
     width: 400px;
     position: fixed;
@@ -217,6 +240,7 @@ label:hover {
     gap: 32px;
     row-gap: 32px;
     justify-content: space-around;
+    padding-top: 32px;
 }
 
 .card-producto {
@@ -343,6 +367,11 @@ p {
     background-color: var(--color-btn-secundario-hover);
 }
 
+.btn-secundario.marked {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
 /* Estilos para la estructura del carrito */
 .cart-row {
     display: flex;
@@ -416,6 +445,15 @@ p {
 @media screen and (max-width: 480px) {
     #menu {
         width: 100%;
+    }
+
+    .fa-circle-up {
+        bottom: 8px;
+        right: 8px;;
+    }
+    
+    #top {
+        scroll-margin-top: 150px;
     }
     
 }

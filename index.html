@@ -11,6 +11,7 @@
 </head>
 
 <body class="body-general">
+    
     <header class="header-general">
         <section class="logo-carrito">
             <img src="assets/larulla.png" alt="Logo Zapatería" class="logo">
@@ -21,12 +22,14 @@
         </section>
     </header>
     <main class="main-general">
+        <section id="top"></section>
         <div id="overlay" class=" overlay"></div>
         <button id="openMenuButton"><img class="icono-filtro" src="/assets/filtros.png"></button>
         <nav id="menu">
             <button id="closeMenuButton">X</button>
             <ul class="ulmenu">
                 <a href="#" class="submenu-todos" data-filter="all" id="all">TODOS</a>
+                <a href="#" class="submenu-todos" data-filter="favoritos" id="menuFavoritos">FAVORITOS</a>
                 <li>
                     <label for="submenu-deportivo">DEPORTIVO</label>
                     <input type="checkbox" id="submenu-deportivo" class="submenu-toggle">
@@ -60,6 +63,9 @@
         <section class="productos">
 
         </section>
+        <a href="#top">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
     </main>
     <footer>
     </footer>
