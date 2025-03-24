@@ -1,0 +1,27 @@
+/* Estilos para la impresión */
+    body {
+      font-size: 12pt;
+    }
+
+    .titulo-presupuesto {
+        color: red;
+    }
+  
+    .cart-row {
+      display: table-row;
+    }
+  
+    .cart-row > div {
+      display: table-cell;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+  
+    #clear-cart, #print-cart {
+      display: none; /* Ocultar botones en la impresión */
+    }
+  
+    #total-container {
+      margin-top: 20px;
+      font-size: 14pt;
+    }

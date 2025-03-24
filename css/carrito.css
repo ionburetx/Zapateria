@@ -75,6 +75,48 @@ footer {
     border: none;
 }
 
+#cart-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#cart-container i {
+    margin-right: 10px;
+}
+
+#cart-count {
+    font-size: 0.8em;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+
+/* Estilos para la estructura del carrito */
+.cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-row > div {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .cart-row img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #total-container {
+    margin-top: 20px;
+    font-size: 14pt;
+  }
+
+
 /* Cambios en pantallas pequeñas */
 @media (max-width: 768px) {
     h1 {
@@ -94,3 +136,4 @@ footer {
         padding-bottom: 250px; /* Aumenta el margen inferior para pantallas pequeñas */
     }
 }
+
