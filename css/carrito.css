@@ -1,0 +1,96 @@
+main {
+    margin-bottom: 120px; /* Ajusta este valor según la altura del footer */
+    overflow: auto; /* Permite que el contenido sea desplazable si es necesario */
+}
+
+h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.productos {
+    display: flex; /* Cambia a flexbox */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+#cart-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #000;
+}
+
+#total-container {
+    margin-top: 20px;
+    margin-bottom: 160px;
+    text-align: center; /* Centra el texto del total */
+    font-size: 14pt; /* Aumenta el tamaño de la fuente para mayor visibilidad */
+    font-weight: bold; /* Resalta el texto */
+    color: #000; /* Color del texto */
+}
+   
+footer {
+    background-color: rgb(250, 243, 243);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#view-quote {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 20px 20px;
+    border: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#view-quote button:hover {
+    background-color: #0056b3;
+    color: rgb(255, 255, 255);
+
+}
+
+#continue-shopping  {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: none;
+    border: none;
+}
+
+/* Cambios en pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+    footer {
+        flex-direction: column; /* Cambia el diseño a vertical */
+        align-items: center; /* Centra los botones */
+    }
+
+    footer button {
+        width: 90%; /* Asegura que los botones ocupen casi todo el ancho */
+        text-align: center; /* Centra el texto de los botones */
+    }
+
+    main {
+        padding-bottom: 250px; /* Aumenta el margen inferior para pantallas pequeñas */
+    }
+}
