@@ -17,13 +17,13 @@
     max-width: 1200px;
     width: 100%;
     margin: auto;
-}
+} 
 
 .icono-filtro {
     cursor: pointer;
     background-color: #747474;
     z-index: 1000;
-}
+} 
 
 .header-general {
     display: flex;
