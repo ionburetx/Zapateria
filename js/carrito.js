@@ -71,14 +71,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const quoteWindow = window.open("", "Presupuesto", "width=800,height=600");
     quoteWindow.document.write("<html><head><title>Presupuesto</title>");
-    quoteWindow.document.write("<link rel='stylesheet' type='text/css' href='css/styles.css'>");
+    quoteWindow.document.write("<link rel='stylesheet' type='text/css' href='css/presupuesto.css'>");
+    quoteWindow.document.write("<meta name='viewport' content='width=device-width, initial-scale=1'>");
     quoteWindow.document.write("</head><body>");
-    quoteWindow.document.write("<h1>Presupuesto</h1>");
+    quoteWindow.document.write("<h1 class='titulo-presupuesto'>Presupuesto</h1>");
+    quoteWindow.document.write(`<h2>Datos personales</h2>`);
+    quoteWindow.document.write("<section class='datos-cliente'>");
     quoteWindow.document.write(`<p><strong>Nombre:</strong> ${name}</p>`);
     quoteWindow.document.write(`<p><strong>Apellido:</strong> ${surname}</p>`);
     quoteWindow.document.write(`<p><strong>Teléfono:</strong> ${phone}</p>`);
     quoteWindow.document.write(`<p><strong>Dirección:</strong> ${address}</p>`);
-    quoteWindow.document.write("<div id='quote-container' class='productos'>");
+    quoteWindow.document.write("</section>");
+    quoteWindow.document.write("<div id='quote-container' class='productos'><h2>Artículos</h2>");
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
@@ -89,18 +93,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
       quoteWindow.document.write(`
         <div class="quote-row">
-          <div class="quote-image"><img src="${product.image}" alt="${product.name}" style="width: 50px;"></div>
-          <div class="quote-name">${product.name}</div>
-          <div class="quote-price">${product.price}</div>
-          <div class="quote-quantity">${product.quantity}</div>
-          <div class="quote-total">${productTotal.toFixed(2)}€</div>
+          <div class="quote-image"><img src="${product.image}" alt="${product.name}"></div>
+          <section class="quote-details">
+            <div class="quote-name">${product.name}</div>
+            <div class="quote-price"><strong>Precio unidad: </strong>${product.price}€</div>
+            <div class="quote-quantity"><strong>Unidades: </strong>${product.quantity}</div>
+            <div class="quote-total"><strong>Precio total: </strong>${productTotal.toFixed(2)}€</div>
+          </section>
         </div>
       `);
     });
 
     quoteWindow.document.write("</div>");
     quoteWindow.document.write(`<div id='total-container'><strong>Total: ${total.toFixed(2)}€</strong></div>`);
-    quoteWindow.document.write("<button onclick='window.print()'>Imprimir Presupuesto</button>");
+    quoteWindow.document.write("<button onclick='window.print()' class='btn-primario'>Imprimir Presupuesto</button>");
     quoteWindow.document.write("</body></html>");
     quoteWindow.document.close();
 

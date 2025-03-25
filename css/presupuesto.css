@@ -1,4 +1,97 @@
+:root {
+    --color-primario: #f00;
+    --color-primario-hover: #c00;
+    --color-btn-secundario-hover: rgb(255, 193, 193);
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
 .titulo-presupuesto {
-    color: red;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.btn-primario {
+
+    min-height: 44px;
+    padding: 8px 16px;
+    background-color: var(--color-primario);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2%;
+}
+
+.btn-primario:hover {
+    background-color: var(--color-primario-hover);
+}
+
+.datos-cliente {
+    background-color: lightsalmon;
+    border-radius: 8px;
+    padding: 16px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.linea-datos-cliente {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.quote-row {
+    background-color: lightgray;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.quote-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: auto;
+}
+
+.quote-name {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+
+.quote-image {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.quote-image img {
+    max-height: 100%;
+    width: auto; 
+    border-radius: 4px; 
+    max-width: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 
