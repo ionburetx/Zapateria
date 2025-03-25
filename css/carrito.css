@@ -1,3 +1,9 @@
+:root {
+    --color-primario: #f00;
+    --color-primario-hover: #c00;
+    --color-btn-secundario-hover: rgb(255, 193, 193);
+}
+
 main {
     margin-bottom: 120px; /* Ajusta este valor según la altura del footer */
     overflow: auto; /* Permite que el contenido sea desplazable si es necesario */
@@ -25,6 +31,35 @@ h1 {
     color: #000;
 }
 
+.cantidad-container {
+    display: flex; /* Flexbox para organizar los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    border: 1px solid #ddd; /* Borde del cuadrado */
+    border-radius: 50px; /* Bordes ligeramente redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 150px; /* Ancho fijo para el cuadrado */
+    height: 50px; /* Altura fija para el cuadrado */
+    background-color: transparent;
+}
+
+.incrementar-cantidad,
+.decrementar-cantidad {
+    font-size: 30px; /* Tamaño del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.2s ease; /* Transición suave */
+}
+
+/* Efecto hover en los botones */
+.incrementar-cantidad:hover,
+.decrementar-cantidad:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
 #total-container {
     margin-top: 20px;
     margin-bottom: 160px;
@@ -49,21 +84,21 @@ footer {
 }
 
 #view-quote {
-    background-color: #ffffff; 
-    color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 16px;
+    background-color: var(--color-primario);
+    color: #fff;
     font-size: 16px;
-    padding: 20px 20px;
-    border: #000000;
-    border-radius: 5px;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-#view-quote button:hover {
-    background-color: #0056b3;
-    color: rgb(255, 255, 255);
-
+#view-quote:hover {
+    background-color: var(--color-primario-hover);
 }
 
 #continue-shopping  {
@@ -71,8 +106,12 @@ footer {
     font-size: 16px;
     cursor: pointer;
     margin: 10px;
-    background-color: none;
+    background-color: transparent;
     border: none;
+}
+
+#continue-shopping:hover {
+    color: var(--color-primario-hover);
 }
 
 #cart-container {
@@ -96,9 +135,11 @@ footer {
 /* Estilos para la estructura del carrito */
 .cart-row {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+    width: 600px;
   }
   
   .cart-row > div {
@@ -107,8 +148,10 @@ footer {
   }
   
   .cart-row img {
-    max-width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
   }
   
   #total-container {
@@ -135,6 +178,12 @@ footer {
 
     main {
         padding-bottom: 250px; /* Aumenta el margen inferior para pantallas pequeñas */
+    }
+
+    .cart-row {
+        width: 100%; /* Ajusta el ancho de la fila al 100% */
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
 }
 

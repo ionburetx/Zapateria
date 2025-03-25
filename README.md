@@ -1,3 +1,4 @@
+ESTE ES EL DOCUMENTO QUE NOS ENTREGA EL CLIENTE:
 # Escaparate 
 
 ## Situación profesional
@@ -32,59 +33,60 @@ Revisión de entregables por parte del profesorado.
 
 3. Documento de equipo que detalle:
 
-CEREMONIA 1:
-Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
-HISTORIAS DE USUARIO:
+PROCESO DE TRABAJO:
 
-  ÉPICA:
+  CEREMONIA 1:
+  Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
+  HISTORIAS DE USUARIO:
 
-    Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
+    ÉPICA:
+      Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
 
+    FUNCIONALIDADES:
+      Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
+      Dashboard: con diferentes artículos
+      Header
 
-  FUNCIONALIDADES:
+    COMPONENTES CON SU ROL:
+      Diseño prototipo - Orlando
+      Tarjeta de producto estructura - Esti
+      Tarjeta de producto estilo - Esti
+      Header estructura - Esti
+      Header estilo - Esti
+      Menú vertical formato desktop estructura - Ion
+      Menú vertical formato desktop estilo - Ion
+      Menú vertical formato mobile estructura - Ion
+      Menú vertical formato mobile estilo (media) - Ion
+      Enlazar y filtrar - Todos
+    - Nombre del Equipo: IOE
 
-    Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
-    Dashboard: con diferentes artículos
-    Header
+    NORMAS INTERNAS:
+      1) 
 
+    OBJETIVOS DEL EQUIPO:
+      1) Optimizar la comunicación asertiva
+      2) Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
+      3) Continuar adquiriendo conocimientos de cómo trabajar en equipo con Git Hub (ramas)
+      4) Analizar historias de usuario en equipo y trabajar en base a ello la retrospectiva y división de tareas
 
-  COMPONENTES CON SU ROL:
+    COMPROMISOS DEL EQUIPO:
+      1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
 
-    Diseño prototipo - Orlando
-    Tarjeta de producto estructura - Esti
-    Tarjeta de producto estilo - Esti
-    Header estructura - Esti
-    Header estilo - Esti
-    Menú vertical formato desktop estructura - Ion
-    Menú vertical formato desktop estilo - Ion
-    Menú vertical formato mobile estructura - Ion
-    Menú vertical formato mobile estilo (media) - Ion
-    Enlazar y filtrar - Todos
-  - Nombre del Equipo: IOE
+    SPRING 1:
+    Tiempo establecido: Lunes de 12 a 14:30
+    Compromisos:
+      - Esti: Diseñar las card
+      - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
+      - Ion: Diseñar el menu
+    
+    CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
+    Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
+    
+    SPRING 2:
+    Tiempo establecido: Martes 8:30 - Jueves 14:30
+    Avanzamos en todos los aspectos del proyecto para finalizar las tareas de cada uno y hacer un merge de las ramas de cada uno. Fusionamos las ramas propias en dev para abordar al día siguiente las bolas extra que nos ha propuesto el cliente, y plantear como podemos organizarnos para llevar a cabo las mismas.
 
-  NORMAS INTERNAS:
-    1) 
-
-  OBJETIVOS DEL EQUIPO:
-    1) Optimizar la comunicación asertiva
-    2) Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
-    3) Continuar adquiriendo conocimientos de cómo trabajar en equipo con Git Hub (ramas)
-    4) Analizar historias de usuario en equipo y trabajar en base a ello la retrospectiva y división de tareas
-
-  COMPROMISOS DEL EQUIPO:
-    1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
-
-  SPRING 1:
-  Tiempo establecido: Lunes de 12 a 14:30
-  Compromisos:
-    - Esti: Diseñar las card
-    - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
-    - Ion: Diseñar el menu
-  
-  CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
-  Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
-  
-  CEREMONIA 3: Miércoles 
+    CEREMONIA 3: Viernes 8:30 
 
 
 

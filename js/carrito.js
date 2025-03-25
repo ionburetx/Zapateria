@@ -129,7 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
     img.src = product.image;
     img.alt = product.name;
-    img.style.width = "50px"; // Ajusta el tamaño de la imagen según sea necesario
     imageCell.appendChild(img);
     productRow.appendChild(imageCell);
 
@@ -142,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     productRow.appendChild(priceCell);
 
     const quantityCell = document.createElement("div");
+    quantityCell.classList.add("cantidad-container");
 
     // Botón de decremento
     const decrementButton = document.createElement("button");
