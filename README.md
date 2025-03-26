@@ -1,4 +1,6 @@
-ESTE ES EL DOCUMENTO QUE NOS ENTREGA EL CLIENTE:
+<div style="background-color: #f5f5dc; padding: 15px; border-radius: 5px;">
+
+# ESTE ES EL DOCUMENTO QUE NOS ENTREGA EL CLIENTE:
 # Escaparate 
 
 ## Situación profesional
@@ -31,80 +33,7 @@ Revisión de entregables por parte del profesorado.
 
 2. Documento de tareas repartidas.
 
-3. Documento de equipo que detalle:
-
-PROCESO DE TRABAJO:
-
-  CEREMONIA 1:
-  Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
-
-  HISTORIAS DE USUARIO:
-
-    ÉPICA:
-      Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
-
-    FUNCIONALIDADES:
-      Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
-      Dashboard: con diferentes artículos
-      Header
-
-    COMPONENTES CON SU ROL:
-      Diseño prototipo - Orlando
-      Tarjeta de producto estructura - Esti
-      Tarjeta de producto estilo - Esti
-      Header estructura - Esti
-      Header estilo - Esti
-      Menú vertical formato desktop estructura - Ion
-      Menú vertical formato desktop estilo - Ion
-      Menú vertical formato mobile estructura - Ion
-      Menú vertical formato mobile estilo (media) - Ion
-      Enlazar y filtrar - Todos
-    - Nombre del Equipo: IOE
-
-    OBJETIVOS DEL EQUIPO:
-      1) Optimizar la comunicación asertiva
-      2) Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
-      3) Continuar adquiriendo conocimientos de cómo trabajar en equipo con Git Hub (ramas)
-      4) Analizar historias de usuario en equipo y trabajar en base a ello la retrospectiva y división de tareas
-
-    COMPROMISOS DEL EQUIPO:
-      1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
-
-    SPRINT 1:
-    Tiempo establecido: Lunes 8:30 - Miercoles 2:30
-    Compromisos:
-      - Esti: Diseñar las card
-      - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
-      - Ion: Diseñar el menu
-    
-    Daily (Martes 8:30):
-    Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
-    
-    Jornada laboral (Martes 8:30 - Jueves 14:30)
-    Avanzamos en todos los aspectos del proyecto para finalizar las tareas de cada uno y hacer un merge de las ramas de cada uno. Fusionamos las ramas propias en dev, así  finalizando el primer sprint y haciendo el commit desde la rama main.  
-    
-    CEREMONIA 2:
-    Para empezar trabajando con las bolas extra que nos ha propuesto el cliente (archivo JSON, añadir carrito de compra, presupuesto y su respectivo formato para imprimir), planeamos cómo organizarnos en la reunión. Para ello, creamos un TAIGA para hacer la lista de tareas que teníamos por hacer y como repartirnos las responsabilidades.
-
-    COMPONENTES CON SU ROL:
-      Crear el archivo JSON: Esti
-      
-    Daily (Viernes 8:30):
-
-
-
-
-  - Reflexión:
-    - ¿Qué hemos logrado?
-    - ¿Cómo lo hemos hecho?
-    - ¿Qué no hemos logrado? 
-    - ¿Qué mejoraríamos?
-    - ¿Cómo lo mejoraríamos?
-    - ¿Qué debemos seguir haciendo?
-    - ¿Qué debemos empezar a hacer?
-    - ¿Qué debemos hacer mejor?
-    - ¿Qué debemos dejar de hacer?
-    - ¿Qué hemos aprendido?
+3. Documento de equipo.
 
 
 Para hacer la entrega, el alumnado deberá publicar el enlace al repositorio en el canal 05-escaparate de discord.
@@ -127,4 +56,91 @@ Para hacer la entrega, el alumnado deberá publicar el enlace al repositorio en 
 
 El dashboard ha de ser una página responsive que muestre fotografías según una clasificación:
 ![dashboard](./assets/dashboard.png "dashboard")
+</div>
+
+
+# PROCESO DE TRABAJO:
+
+__CEREMONIA 1 (Lunes 10 - 11:30)__  
+Analizamos el reto que nos proponen y hablamos sobre los objetivos y compromisos que tenemos como equipo para poder hacer una retro al finalizar el reto.
+
+__SPRINT 1 (Lunes 12- Miércoles 2:30)__   
+  <u>ÉPICA:</u>
+  Realizar una página web con formato dashboard que sea responsive (hamburguesa) y tenga un submenú vertical a la izquierda (aside) con categorías y sub categorías que filtren.
+  <u>FUNCIONALIDADES:</u>
+  - Menú vertical a la izquierda que se convierte en hamburguesa y tiene categorías y subcategorías
+  - Dashboard: con diferentes artículos
+  - Header  
+
+<u>OBJETIVOS DEL EQUIPO:</u>
+  - Optimizar la comunicación asertiva
+  - Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
+  - Continuar adquiriendo conocimientos de cómo trabajar en equipo con Git Hub (ramas)
+  - Analizar historias de usuario en equipo y trabajar basándonos en esto la retrospectiva y división de tareas
+
+<u>COMPROMISOS DEL EQUIPO:</u>
+  - Lograr el objetivo final que nos pide el cliente y crear una página web a la altura para el usuario.
+
+<u>DISTRIBUCIÓN DE TAREAS:</u>
+  - Diseño prototipo - Orlando
+  - Tarjeta de producto estructura - Esti
+  - Tarjeta de producto estilo - Esti
+  - Header estructura - Esti
+  - Header estilo - Esti
+  - Menú vertical formato desktop estructura - Ion
+  - Menú vertical formato desktop estilo - Ion
+  - Menú vertical formato mobile estructura - Ion
+  - Menú vertical formato mobile estilo (media) - Ion
+  - Enlazar y filtrar - Todos
+    
+<u>DAILY (Martes 8:30)</u>  
+Orlando nos muestra el diseño que ha creado. Como nos convence a todos, decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
+    
+<u>JORNADA LABORAL (Martes 8:30 - Jueves 14:30)</u>  
+Avanzamos en todos los aspectos del proyecto para finalizar las tareas de cada uno y hacer un merge de las ramas de cada uno. Fusionamos las ramas propias en dev, así  finalizando el primer sprint y haciendo el commit desde la rama main.  
+    
+__CEREMONIA 2 (Viernes 8:30)__  
+Para empezar trabajando con las bolas extra que nos ha propuesto el cliente (archivo JSON, añadir carrito de compra, presupuesto y su respectivo formato para imprimir), planeamos cómo podriamos organizarnos. Para ello, creamos un TAIGA para hacer la lista de tareas que teníamos por hacer y cómo repartirnos las responsabilidades.
+
+<u>ÉPICA:</u>  
+Añadir archivo JSON, carrito de compra, presupuesto y su respectivo formato para imprimir.
+
+<u>DISTRIBUCIÓN DE TAREAS:</u>  
+  - Crear el archivo JSON: Esti
+  - Añadir carrito: Orlando
+  - Diseño de la pagina del carrito y formulario: Ion
+
+__SPRINT 2 (Viernes 8:30- Miercoles 12:30)__  
+Trabajamos cada uno en sus tareas. Una vez teniendo casi todas las funcionalidades necesarias, como los archivos eran muy largos, decidimos estructurarlos mejor para dividir el codigo en diferentes archivos y tener todo más ordenado. Al hacer esto, surgieron varios problemas de CSS y JS. Entre todos tuvimos que solucionarlos hasta lograr que todo funcionara correctamente.  
+
+Para dar por finalizado el reto, decidimos trabajar en los últimos detalles: 
+  - Mejorar el diseño del documento del presupuesto impreso
+  - Revisar lo que hasta el momento habíamos escrito en el README para hacer los cambios precisos y terminar de escribirlo
+  - Intentar darle funcionalidad al botón de favoritos que tenemos creado para añadir un extra más al proyecto con el objetivo de sorprender al cliente
+  - Hacer que el valor de las unidades de productos disponibles que hay, se visualicen correctamente dependiendo cada vez que hacemos click en los botones (comprar, incrementar, decrementar y eliminar producto del carrito de compra). De este modo, actualizándose constantemente y mostrando el valor real actual en cada momento.  
+
+<u>REUNIÓN FINAL (Miércoles 12 - 12:30)</u>  
+Hacemos retro del reto y llegamos a las siguientes reflexiones entre todos:
+  - ¿Qué hemos logrado?
+
+  - ¿Cómo lo hemos hecho?
+
+  - ¿Qué no hemos logrado? 
+
+  - ¿Qué mejoraríamos?
+
+  - ¿Cómo lo mejoraríamos?
+
+  - ¿Qué debemos seguir haciendo?
+
+  - ¿Qué debemos empezar a hacer?
+
+  - ¿Qué debemos hacer mejor?
+
+  - ¿Qué debemos dejar de hacer?
+
+  - ¿Qué hemos aprendido?
+
+
+
 
