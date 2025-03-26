@@ -95,3 +95,6 @@ body {
     object-position: center;
 }
 
+#total-container {
+    font-size: 32px;
+}

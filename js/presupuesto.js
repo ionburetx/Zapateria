@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     const quoteContainer = document.getElementById("quote-container");
     const totalAmount = document.getElementById("total-amount");
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -24,10 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         priceCell.textContent = product.price;
         productRow.appendChild(priceCell);
 
-        const quantityCell = document.createElement("div");
-        quantityCell.textContent = product.quantity;
-        productRow.appendChild(quantityCell);
-
+        
         const totalCell = document.createElement("div");
         const productTotal = parseFloat(product.price.replace("€", "")) * product.quantity;
         totalCell.textContent = productTotal.toFixed(2) + "€";
@@ -41,4 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mostrar el total
     totalAmount.textContent = total.toFixed(2) + "€";
-});
+});*/

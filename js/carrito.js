@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const quoteWindow = window.open("", "Presupuesto", "width=800,height=600");
     quoteWindow.document.write("<html><head><title>Presupuesto</title>");
     quoteWindow.document.write("<link rel='stylesheet' type='text/css' href='css/presupuesto.css'>");
+    quoteWindow.document.write("<link rel='stylesheet' type='text/css' href='css/print.css' media='print'>");
     quoteWindow.document.write("<meta name='viewport' content='width=device-width, initial-scale=1'>");
     quoteWindow.document.write("</head><body>");
     quoteWindow.document.write("<h1 class='titulo-presupuesto'>Presupuesto</h1>");

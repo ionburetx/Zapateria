@@ -95,6 +95,7 @@
     position: fixed;
     top: 150px;
     margin: 0 8px;
+    ;
 }
 
 /*Icono carrito*/
@@ -102,6 +103,10 @@
     display: flex;
     align-items: center;
     font-size: 1.5em;
+}
+
+#cart-container:hover {
+    cursor: pointer; /* Cambia el cursor a una mano */
 }
 
 #cart-container i {

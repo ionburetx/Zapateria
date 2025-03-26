@@ -4,7 +4,9 @@
     }
 
     .titulo-presupuesto {
-        color: red;
+      font-size: 40px;
+      font-weight: 900;
+      margin-bottom: 40px;
     }
   
     .cart-row {
@@ -23,5 +25,12 @@
   
     #total-container {
       margin-top: 20px;
-      font-size: 14pt;
+      font-size: 32px;
     }
+
+    .btn-primario {
+      display: none;
+    }
+
+    
+
