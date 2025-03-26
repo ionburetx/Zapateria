@@ -37,6 +37,7 @@ PROCESO DE TRABAJO:
 
   CEREMONIA 1:
   Analizámos el reto que nos proponen y dejamos claros los siguientes puntos:
+
   HISTORIAS DE USUARIO:
 
     ÉPICA:
@@ -60,9 +61,6 @@ PROCESO DE TRABAJO:
       Enlazar y filtrar - Todos
     - Nombre del Equipo: IOE
 
-    NORMAS INTERNAS:
-      1) 
-
     OBJETIVOS DEL EQUIPO:
       1) Optimizar la comunicación asertiva
       2) Mejorar cada uno en nuestros puntos débiles en cuanto a conocimientos técnicos
@@ -72,21 +70,27 @@ PROCESO DE TRABAJO:
     COMPROMISOS DEL EQUIPO:
       1) Lograr el objetivo final que nos pide el cliente y crear una pagína web a la altura para el usuario.
 
-    SPRING 1:
-    Tiempo establecido: Lunes de 12 a 14:30
+    SPRINT 1:
+    Tiempo establecido: Lunes 8:30 - Miercoles 2:30
     Compromisos:
       - Esti: Diseñar las card
       - Orlando: Buscar como sería el diseño que plantearemos a nuestra web y bocetar
       - Ion: Diseñar el menu
     
-    CEREMONIA 2: Martes 8:30 (Se decide para el segundo SPRING lo siguiente):
+    Daily (Martes 8:30):
     Orlando nos muestra el diseño que ha creado y como nos convence a todos decidimos que en vez de tener un menu lateral en desk top y un menu hamburguesa en móviles, crear un botón de filtros que ira situado en el main donde el usuario podra hacer click y entonces aparecera el "menu" lateral con los apartados y subapartados correspondientes. De este modo, el menu desaparece y pasa a ser un botón.
     
-    SPRING 2:
-    Tiempo establecido: Martes 8:30 - Jueves 14:30
-    Avanzamos en todos los aspectos del proyecto para finalizar las tareas de cada uno y hacer un merge de las ramas de cada uno. Fusionamos las ramas propias en dev para abordar al día siguiente las bolas extra que nos ha propuesto el cliente, y plantear como podemos organizarnos para llevar a cabo las mismas.
+    Jornada laboral (Martes 8:30 - Jueves 14:30)
+    Avanzamos en todos los aspectos del proyecto para finalizar las tareas de cada uno y hacer un merge de las ramas de cada uno. Fusionamos las ramas propias en dev, así  finalizando el primer sprint y haciendo el commit desde la rama main.  
+    
+    CEREMONIA 2:
+    Para empezar trabajando con las bolas extra que nos ha propuesto el cliente (archivo JSON, añadir carrito de compra, presupuesto y su respectivo formato para imprimir), planeamos cómo organizarnos en la reunión. Para ello, creamos un TAIGA para hacer la lista de tareas que teníamos por hacer y como repartirnos las responsabilidades.
 
-    CEREMONIA 3: Viernes 8:30 
+    COMPONENTES CON SU ROL:
+      Crear el archivo JSON: Esti
+      
+    Daily (Viernes 8:30):
+
 
 
 

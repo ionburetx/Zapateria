@@ -1,5 +1,6 @@
 import { applyFilters } from "./menu.js";
 import { handleAddToCart } from "./icono-carrito.js";
+import { leerStock } from "./stock.js";
 
 // Función para mostrar los productos que recorre los datos del JSON 
 // y genere dinámicamente el HTML para cada producto.
@@ -10,6 +11,8 @@ function mostrarProductos(zapatillas) {
   zapatillas.forEach(categoria => {
     categoria.productos.forEach(producto => {
       // Crea el HTML para cada producto
+      const stock = leerStock(producto.id, producto.unidades);
+
       const productoHTML = `
           <article class="card-producto ${categoria.categoria}-${categoria.subcategoria}" id="${producto.id}">
             <header class="header-producto">
@@ -30,7 +33,7 @@ function mostrarProductos(zapatillas) {
                   <select class="producto-tallas">
                     ${producto.tallas.map(talla => `<option>${talla}</option>`).join("")}
                   </select>
-                  <p class="producto-unidades">${producto.unidades} ud.</p>
+                  <p class="producto-unidades">${stock} ud.</p>
                 </section>
               </section>
             </main>

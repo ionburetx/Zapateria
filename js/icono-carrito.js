@@ -1,4 +1,6 @@
+import { actualizarStock } from "./stock.js";
 
+//Funciones realizadas al clicar boton comprar
 function handleAddToCart() {
   count++;
   cartCount.textContent = count;
@@ -13,6 +15,7 @@ function handleAddToCart() {
     name: productElement.querySelector("h3").textContent,
     price: productElement.querySelector(".producto-precio").textContent,
     image: productElement.querySelector("img").src,
+    unidad: productElement.querySelector(".producto-unidades").textContent,
     quantity: 1,
     totalAmount: 0
   };
@@ -31,11 +34,14 @@ function handleAddToCart() {
   if (stockElement) {
     let stock = parseInt(stockElement.textContent);
     stock -= 1;
-    stockElement.textContent = stock;
+    stockElement.textContent = `${stock} ud.`;
+    actualizarStock(productId, stock)
   } else {
-    console.error("Elemento .producto-stock no encontrado");
+    console.error("Elemento .producto-unidades no encontrado");
   }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////
 
 function handleRemoveFromCart(productId) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -59,6 +65,7 @@ function handleRemoveFromCart(productId) {
         let stock = parseInt(stockElement.textContent);
         stock += 1;
         stockElement.textContent = stock;
+        actualizarStock(productId, stock)
       } else {
         console.error("Elemento .producto-unidades no encontrado");
       }
