@@ -1,3 +1,6 @@
+import { actualizarStock } from "./stock.js";
+import { leerStock } from "./stock.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   // Función para limpiar el carrito
   function clearCart() {
@@ -15,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const productIndex = cart.findIndex(product => product.id === productId);
     if (productIndex !== -1) {
+      let stock = parseInt(cart[productIndex].stock); // Obtener el stock antes de eliminar el producto
       cart.splice(productIndex, 1);
       localStorage.setItem("cart", JSON.stringify(cart));
       updateCartCount();
+      actualizarStock(productId, stock);
       location.reload(); // Recargar la página para actualizar la vista del carrito
     }
   }
@@ -152,10 +157,16 @@ document.addEventListener("DOMContentLoaded", function () {
       if (product.quantity > 1) {
         product.quantity--;
         quantitySpan.textContent = product.quantity;
+        let stock = leerStock(product.id, product.unidades);
+        //stock = parseInt(product.stock);
+        //stock -= 1;
+        stock++;
+        actualizarStock(product.id, stock);
         updateProductTotal(product, totalCell);
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCartCount();
         updateTotalAmount();
+
       }
     });
     quantityCell.appendChild(decrementButton);
@@ -172,6 +183,9 @@ document.addEventListener("DOMContentLoaded", function () {
     incrementButton.classList.add("incrementar-cantidad");
     incrementButton.addEventListener("click", function () {
       product.quantity++;
+      let stock = document.querySelector(".producto-unidades").textContent;
+      stock--;  
+      actualizarStock(product.id, stock);
       quantitySpan.textContent = product.quantity;
       updateProductTotal(product, totalCell);
       localStorage.setItem("cart", JSON.stringify(cart));

@@ -64,7 +64,7 @@ function handleRemoveFromCart(productId) {
       if (stockElement) {
         let stock = parseInt(stockElement.textContent);
         stock += 1;
-        stockElement.textContent = stock;
+        //stockElement.textContent = `${stock} ud.`;
         actualizarStock(productId, stock)
       } else {
         console.error("Elemento .producto-unidades no encontrado");
